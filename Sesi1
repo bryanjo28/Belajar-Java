@@ -1,0 +1,53 @@
+package sesi1java;
+
+import java.util.Scanner;
+
+public class Sesi1Java {
+public static void main(String[] args) {
+     
+    String nama;
+    int nim;
+    int pilih;
+    Scanner bj = new Scanner(System.in);
+    
+    System.out.println("Welcome to BluejackStore");
+    System.out.print("Nama : ");
+    nama = bj.next();
+    System.out.print("NIM : ");
+    nim = bj.nextInt();
+    
+    System.out.println("");
+    System.out.println("");
+    
+    do {
+    System.out.println("Selamat Datang "+nama);
+    System.out.println("");
+    System.out.println("1. Harry Potter");
+    System.out.println("2. Twillight");
+    System.out.println("3. Game of Thrones");
+    System.out.println("4.exit");
+    System.out.print("Pilih:");
+    pilih = bj.nextInt();
+    
+    switch(pilih)
+    {
+        case 1: {
+          
+           System.out.print("Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic, and subjugate all wizards and Muggles (non-magical people).");
+           break;
+        }
+         case 2: {
+          
+           System.out.print("Twilight is a 2008 American romantic fantasy film based on Stephenie Meyer's novel of the same name. Directed by Catherine Hardwicke, the film stars Kristen Stewart and Robert Pattinson. It is the first film in The Twilight Saga film series. This film focuses on the development of the relationship between Bella Swan (a teenage girl) and Edward Cullen (a vampire), and the subsequent efforts of Edward and his family to keep Bella safe from a coven of evil vampires.");
+           break;
+        }
+         case 3: {
+          
+           System.out.print("Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones. The show is filmed in Belfast and elsewhere in Northern Ireland, Canada, Croatia, Iceland, Malta, Morocco, Scotland, Spain, and the United States.");
+           break;
+        }
+         
+    }
+    }while(pilih<4);
+    }
+}
